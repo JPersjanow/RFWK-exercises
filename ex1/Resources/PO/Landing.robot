@@ -11,3 +11,4 @@ Navigate To
 
 Verify Page Loaded
     Wait Until Page Contains Element    ${LANDING_PAGE_WELCOME}
+    Capture Page Screenshot
