@@ -1,8 +1,10 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library     SeleniumLibrary
+
 
 *** Variables ***
-${BROWSER}    edge
+${BROWSER}      edge
+
 
 *** Keywords ***
 Begin Test
