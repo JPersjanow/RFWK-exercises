@@ -3,8 +3,6 @@ Resource    PO/Landing.robot
 Resource    PO/Nav.robot
 Resource    PO/Team.robot
 
-*** Variables ***
-
 
 *** Keywords ***
 Go to Landing Page

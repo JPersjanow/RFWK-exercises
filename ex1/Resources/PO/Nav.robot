@@ -1,9 +1,11 @@
 *** Settings ***
-Library    SeleniumLibrary
-Library    XML
+Library     SeleniumLibrary
+Library     XML
+
 
 *** Variables ***
 ${TEAM_SELECTOR}    //a[text() = 'Team']
+
 
 *** Keywords ***
 Select "Team" Page
@@ -26,7 +28,6 @@ Select Page
     Scroll Element Into View    ${locator}
     Click Element    ${locator}
     Wait For Scroll
-
 
 Wait For Scroll
     [Arguments]    ${scroll_time}=2s
