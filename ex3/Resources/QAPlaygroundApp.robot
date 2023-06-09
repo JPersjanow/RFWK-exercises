@@ -1,13 +1,15 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library     SeleniumLibrary
+
 
 *** Variables ***
-${URL}    https://qaplayground.dev/apps/verify-account/
-${MAIN_CONTAINER_LOCATOR}    //div[@class="container"]
-${CODE_CONTAINER_LOCATOR}    //div[@class="code-container"]
-${CODE_INFO}    //small[@calss="info"]
-${INPUT_LOCATOR}    //input[@class="code"]
-${SUCCESS_LOCATOR}    //small[@class="info success"]
+${URL}                          https://qaplayground.dev/apps/verify-account/
+${MAIN_CONTAINER_LOCATOR}       //div[@class="container"]
+${CODE_CONTAINER_LOCATOR}       //div[@class="code-container"]
+${CODE_INFO}                    //small[@calss="info"]
+${INPUT_LOCATOR}                //input[@class="code"]
+${SUCCESS_LOCATOR}              //small[@class="info success"]
+
 
 *** Keywords ***
 Navigate To
@@ -39,5 +41,4 @@ Validate Login
 
 Get All Input Elements
     @{all_input_elements}=    Get WebElements    ${INPUT_LOCATOR}
-    [Return]    @{all_input_elements}
-
+    RETURN    @{all_input_elements}
