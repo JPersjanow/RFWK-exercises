@@ -4,8 +4,9 @@ Resource    PO/About.robot
 Resource    PO/Blog.robot
 Resource    PO/Portfolio.robot
 
+
 *** Variables ***
-${URL}    https://qaplayground.dev/apps/links/
+${URL}      https://qaplayground.dev/apps/links/
 
 
 *** Keywords ***

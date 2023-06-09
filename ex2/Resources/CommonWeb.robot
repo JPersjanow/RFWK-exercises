@@ -1,8 +1,10 @@
 *** Settings ***
-Resource    ../../ex1/Resources/CommonWeb.robot
+Library     SeleniumLibrary
+
 
 *** Variables ***
-${BROWSER}    edge
+${BROWSER}      edge
+
 
 *** Keywords ***
 Begin Test

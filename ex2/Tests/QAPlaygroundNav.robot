@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    ../Resources/QAPlaygroundApp.robot
 Resource    ../Resources/CommonWeb.robot
-Suite Setup    CommonWeb.Start Web Test
+Suite Setup    CommonWeb.Begin Test
 Suite Teardown    CommonWeb.End Test
 
 *** Test Cases ***

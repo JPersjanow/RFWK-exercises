@@ -1,11 +1,13 @@
 *** Settings ***
-Library    SeleniumLibrary
-Resource   Nav.robot
-Resource   Common.robot
+Library     SeleniumLibrary
+Resource    Nav.robot
+Resource    Common.robot
+
 
 *** Variables ***
-${BLOG_PAGE_HEADER}    //h1[@id="title"]
-${BLOG_HEADER_TITLE_EXPECTED_TEXT}    Welcome to the Blog Page
+${BLOG_PAGE_HEADER}                     //h1[@id="title"]
+${BLOG_HEADER_TITLE_EXPECTED_TEXT}      Welcome to the Blog Page
+
 
 *** Keywords ***
 Validate
